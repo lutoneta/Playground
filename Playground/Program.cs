@@ -152,6 +152,11 @@ namespace Playground
            return "zieluny";
             
         }
+
+        public static string kolor()
+        {
+            return "zieluny";
+        }
     }
 
 
