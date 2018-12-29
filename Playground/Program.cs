@@ -12,6 +12,7 @@ namespace Playground
             Rower kolarkaObiekt = new Kolarka();
             Console.WriteLine("czy dlybek jest szybki? - " + dlybekObiekt.jestSzybki);
             Console.WriteLine("czy kolarka ma przerzutki? - " + kolarkaObiekt.maPrzerzutki);
+            Console.WriteLine("jakiego koloru jest Dlybek - " + Dlybek.kolor());
             Console.WriteLine("Ile to jest 5 + 10: " + suma(5, 10));
             Console.ReadLine();
         }
@@ -42,6 +43,11 @@ namespace Playground
             // okreslone zmienne klasowe
             maPrzerzutki = false;
             jestSzybki = false;
+        }
+
+        public static string kolor()
+        {
+            return "zieluny";
         }
     }
 
