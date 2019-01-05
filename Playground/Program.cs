@@ -283,6 +283,64 @@ public class Ewelina : Woman
     }
 }
 
+public class Przemo : Man
+{
+    public Przemo()
+    {
+        name = "Przemo";
+        isAdult = true;
+        hasMuscles = true;
+        weight = 66;
+    }
+}
+
+
+
+public class Zwierzaki
+{
+    public Boolean maCzteryLapy;
+    public Boolean jestGlodny;
+    public int IleWazy;
+    public int ileJe;
+    public Boolean maWlosy;
+    public int Wiek;
+    public string imie;
+
+}
+
+public class Kot : Zwierzaki
+{
+    public Boolean maSiersc;
+    public Boolean miauczy;
+    public Boolean maWasy;
+    public Boolean pijeMleko;
+    public Boolean jeMyszy;
+    public Boolean drepie;
+}
+
+public class Pies : Zwierzaki
+{
+    public Boolean Warczy;
+    public Boolean szczeka;
+    public Boolean aportuje;
+    public Boolean jeSmakolyki;
+    public Boolean idzieNaSpacer;
+}
+
+public class Milton : Pies
+{
+    public Milton()
+    {
+        imie = "Milton";
+        ileJe = 100;
+        maWlosy = true;
+        aportuje = false;
+        idzieNaSpacer = true;
+        jestGlodny = true;
+        Wiek = 8;
+    }
+}
+
 
 
 
