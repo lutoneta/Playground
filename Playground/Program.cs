@@ -6,7 +6,7 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-<<<<<<< HEAD
+
             //Console.WriteLine("Hello World Mijuch is coming");
             //Console.WriteLine("Zaczynamy");
             ////Console.ReadLine();
@@ -49,7 +49,11 @@ namespace Playground
 
             Console.WriteLine("\nCo?");
             Console.WriteLine("\nDo wyklucia pozostalo:");
+            //wywolanie
             IleDni();
+
+           
+        
 
             string reply = Console.ReadLine();
             Console.WriteLine("AAAAA -> " + reply);
@@ -65,6 +69,9 @@ namespace Playground
             Console.WriteLine("Tadeusz -> father");
             Console.WriteLine("Ewelina father -> " + EwelinaObiekt.father.name);
             Console.WriteLine("Ewelina mother -> " + EwelinaObiekt.mother.name);
+
+            Console.WriteLine("\nDo maternity pozostalo:");
+            IleDniZostalo();
 
         }
 
@@ -117,6 +124,22 @@ namespace Playground
 
 
         }
+
+
+        static void IleDniZostalo()
+        {
+            /* Data start maternity*/
+            DateTime MaternityDay = new DateTime(2019, 03, 15, 12, 00, 00);
+
+            /* Data dzisiejsza */
+            DateTime dzis = new DateTime(2019, 01, 05, 19, 14, 00);
+
+            /* Ustalenie roznicy w dniach */
+            TimeSpan roznica = MaternityDay.Subtract(DateTime.Now);
+
+            Console.WriteLine(roznica.ToString());
+        }
+
     }
 
     //Tworzymy nowa klase
@@ -259,4 +282,7 @@ public class Ewelina : Woman
         isChild = true;
     }
 }
+
+
+
 
