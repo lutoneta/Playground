@@ -63,6 +63,7 @@ namespace Playground
             Human TadeuszObiekt = new Tadeusz();
             Human AnetaObiekt = new Aneta();
             Human EwelinaObiekt = new Ewelina();
+            Human PrzemoObiekt = new Przemo();
             EwelinaObiekt.father = TadeuszObiekt;
             EwelinaObiekt.mother = DanutaObiekt;
             Console.WriteLine("Danuta -> mother");
@@ -72,6 +73,9 @@ namespace Playground
 
             Console.WriteLine("\nDo maternity pozostalo:");
             IleDniZostalo();
+            Console.WriteLine("Przemus duzo wazy. To juz chyba bedzie " + PrzemoObiekt.weight + "kg!");
+            Zwierzaki MiltonObiekt = new Milton();
+            Console.WriteLine("Milton ma juz " + MiltonObiekt.Wiek + " lat.");
 
         }
 
