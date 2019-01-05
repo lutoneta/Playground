@@ -6,6 +6,7 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
+<<<<<<< HEAD
             //Console.WriteLine("Hello World Mijuch is coming");
             //Console.WriteLine("Zaczynamy");
             ////Console.ReadLine();
@@ -33,6 +34,26 @@ namespace Playground
             //Console.WriteLine("Mia father -> " + (MiaObiekt as Mia).father.name);
             //Console.WriteLine("Mia mother -> " + (MiaObiekt as Mia).mother.name);
 
+
+            Console.WriteLine("Hello World Mijuch is coming");
+            Console.WriteLine("Zaczynamy");
+            //Console.ReadLine();
+            Rower dlybekObiekt = new Dlybek();
+            Rower kolarkaObiekt = new Kolarka();
+            Console.WriteLine("czy dlybek jest szybki? - " + dlybekObiekt.jestSzybki);
+            Console.WriteLine("czy kolarka ma przerzutki? - " + kolarkaObiekt.maPrzerzutki);
+            Console.WriteLine("jakiego koloru jest Dlybek - " + Dlybek.kolor());
+            Console.WriteLine("Ile to jest 5 + 10: " + suma(5, 10));
+            Console.WriteLine("jakiego koloru sa kola? - " + Rower.kolorKola());
+            przykladArray();
+
+            Console.WriteLine("\nCo?");
+            Console.WriteLine("\nDo wyklucia pozostalo:");
+            IleDni();
+
+            string reply = Console.ReadLine();
+            Console.WriteLine("AAAAA -> " + reply);
+
             Console.WriteLine("////Karcze");
             Human DanutaObiekt = new Danuta();
             Human TadeuszObiekt = new Tadeusz();
@@ -44,6 +65,7 @@ namespace Playground
             Console.WriteLine("Tadeusz -> father");
             Console.WriteLine("Ewelina father -> " + EwelinaObiekt.father.name);
             Console.WriteLine("Ewelina mother -> " + EwelinaObiekt.mother.name);
+
         }
 
         //funkcja zwrotna
@@ -79,6 +101,22 @@ namespace Playground
             Console.WriteLine("Posortowane alfabetycznie");
             foreach (string str in array) Console.Write(str + " ");
         }
+
+        static void IleDni()
+        {
+            /* Data porodu*/
+            DateTime DeliveryDay = new DateTime(2019, 04, 15,12,00,00);
+
+            /* Data dzisiejsza */
+            DateTime dzis = new DateTime(2019,01,04,19,14,00);
+
+            /* Ustalenie roznicy w dniach */
+            TimeSpan roznica = DeliveryDay.Subtract(DateTime.Now);
+
+            Console.WriteLine(roznica.ToString());
+
+
+        }
     }
 
     //Tworzymy nowa klase
@@ -111,7 +149,8 @@ namespace Playground
 
         public static string kolor()    
         {
-            return "zieluny";
+           return "zieluny";
+            
         }
     }
 
