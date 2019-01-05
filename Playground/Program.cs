@@ -19,9 +19,11 @@ namespace Playground
             przykladArray();
 
             Console.WriteLine("\nCo?");
+            Console.WriteLine("\nDo wyklucia pozostalo:");
+            IleDni();
+
             string reply = Console.ReadLine();
             Console.WriteLine("AAAAA -> " + reply);
-
 
         }
 
@@ -58,6 +60,22 @@ namespace Playground
             Console.WriteLine("Posortowane alfabetycznie");
             foreach (string str in array) Console.Write(str + " ");
         }
+
+        static void IleDni()
+        {
+            /* Data porodu*/
+            DateTime DeliveryDay = new DateTime(2019, 04, 15,12,00,00);
+
+            /* Data dzisiejsza */
+            DateTime dzis = new DateTime(2019,01,04,19,14,00);
+
+            /* Ustalenie roznicy w dniach */
+            TimeSpan roznica = DeliveryDay.Subtract(DateTime.Now);
+
+            Console.WriteLine(roznica.ToString());
+
+
+        }
     }
 
     //Tworzymy nowa klase
@@ -90,7 +108,8 @@ namespace Playground
 
         public static string kolor()    
         {
-            return "zieluny";
+           return "zieluny";
+            
         }
     }
 
